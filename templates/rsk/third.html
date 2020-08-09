@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collection of objects from the backend</title>
+
+    <link rel="stylesheet" href="{% static 'css/style4.css' %}">
+
+</head>
+<body>
+    <h1>Fruits list is {{fruits}}</h1>
+    {% for i in fruits %}
+    
+    <h2><span style="color: orangered;">{{i}}</span></h2>
+
+    {% endfor %}
+</body>
+</html>
